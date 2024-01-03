@@ -67,7 +67,7 @@ pipeline{
         }
         stage('Deploy to container'){
             steps{
-                sh 'docker run -d -p 8082:80 gatabaki/netflix:latest'
+                sh 'docker run -d -p 8083:80 gatabaki/netflix:latest'
             }
         }
         stage('Deploy to kubernets'){
